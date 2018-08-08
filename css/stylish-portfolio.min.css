@@ -15,22 +15,29 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    z-index: 1
+    z-index: 1;
 }
 
 .portfolio-item .caption .caption-content {
     color: #fff;
-    margin: auto 2rem 2rem
+    /*margin: auto 2rem 2rem;*/
+    
 }
 
 .portfolio-item .caption .caption-content h2 {
-    font-size: .8rem;
-    text-transform: uppercase
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    /*margin-left*/
+    margin-top:25px;
+    text-align: left;
+    color: #ffffff;
 }
 
 .portfolio-item .caption .caption-content p {
+    width: 300px;
     font-weight: 300;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    margin:30px 0  0 3px;
 }
 
 @media (min-width:1025px) {
@@ -41,27 +48,27 @@
     .portfolio-item .caption {
         -webkit-transition: -webkit-clip-path .25s ease-out, background-color .7s;
         -webkit-clip-path: inset(0);
-        clip-path: inset(0)
+        clip-path: inset(0);
     }
     .portfolio-item .caption .caption-content {
         transition: opacity .25s;
         margin-left: 5rem;
         margin-right: 5rem;
-        margin-bottom: 5rem
+        margin-bottom: 5rem;
     }
     .portfolio-item img {
         -webkit-transition: -webkit-clip-path .25s ease-out;
         -webkit-clip-path: inset(-1px);
-        clip-path: inset(-1px)
+        clip-path: inset(-1px);
     }
     .portfolio-item:hover img {
         -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem)
+        clip-path: inset(2rem);
     }
     .portfolio-item:hover .caption {
-        background-color: rgba(29, 128, 159, .9);
+        background-color: rgba(139, 117, 164, .9);
         -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem)
+        clip-path: inset(2rem);
     }
 }
 
@@ -69,4 +76,8 @@
 display: flex;
 margin: 0 auto;
 border:0;
+}
+
+.tomu a {
+    color: #8b75a4;
 }
